@@ -1,0 +1,31 @@
+Boxer installation
+==================
+
+Usage from git
+--------------
+
+Install needed packages:
+
+    aptitude install libapp-cmd-perl libpath-class-perl libfile-homedir-perl
+    aptitude install libjson-perl librole-commons-perl libmatch-simple-perl
+    aptitude install liblog-any-adapter-perl libipc-system-simple-perl
+    aptitude install libtypes-path-tiny-perl libyaml-libyaml-perl
+    aptitude install libmoox-log-any-perl libtype-tiny-perl
+    aptitude install libmoox-types-mooselike-perl reclass python-pkg-resources
+
+Pull code and data from git:
+
+    git clone git://git.debian.org/boxer/App-Boxer
+    git clone git://source.jones.dk/blends
+
+Execute with explicit paths to local library and data:
+
+    cd App-Boxer
+    PERL5LIB=lib bin/boxer compose --datadir ../blends debian-parl-eu wheezy
+
+
+Development
+-----------
+
+System compositions are expressed using reclass.  See the README in the
+sample data dir for more info on its structure.

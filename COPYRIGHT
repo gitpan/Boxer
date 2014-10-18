@@ -1,0 +1,65 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Boxer
+Upstream-Contact: Jonas Smedegaard (JONASS) <jonass@cpan.org>
+Source: https://metacpan.org/release/Boxer
+
+Files: Changes
+ META.json
+ META.yml
+ bin/boxer
+ dist.ini
+ doap.ttl
+ lib/Boxer/CLI/Command.pm
+ lib/Boxer/CLI/Command/About.pm
+ lib/Boxer/CLI/Command/Aliases.pm
+ lib/Boxer/CLI/Command/Commands.pm
+ lib/Boxer/CLI/Command/Compose.pm
+ lib/Boxer/Role/Interact.pm
+ lib/Boxer/Task.pm
+ lib/Boxer/Task/Classify.pm
+ lib/Boxer/Task/Serialize.pm
+ t/00_compile.t
+ t/00_compile_scripts.t
+ t/01_app_help.t
+ t/fixme.t
+ t/minimumversion.t
+ t/pod.t
+Copyright: Copyright 2014 Jonas Smedegaard.
+License: GPL-1.0+ or Artistic-1.0
+
+Files: INSTALL
+ LICENSE
+ TODO
+ doc/boxer.svg
+Copyright: Unknown
+License: Unknown
+
+Files: COPYRIGHT
+ CREDITS
+ SIGNATURE
+Copyright: None
+License: public-domain
+
+Files: README
+ lib/Boxer.pm
+ lib/Boxer/CLI.pm
+Copyright: This software is copyright (c) 2013 by Jonas Smedegaard.
+License: GPL-1.0+ or Artistic-1.0
+
+Files: Makefile.PL
+Copyright: Copyright 2013 Toby Inkster.
+License: GPL-1.0+ or Artistic-1.0
+
+License: Artistic-1.0
+ This software is Copyright (c) 2014 by the copyright holder(s).
+ 
+ This is free software, licensed under:
+ 
+   The Artistic License 1.0
+
+License: GPL-1.0
+ This software is Copyright (c) 2014 by the copyright holder(s).
+ 
+ This is free software, licensed under:
+ 
+   The GNU General Public License, Version 1, February 1989

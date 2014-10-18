@@ -1,0 +1,33 @@
+Initial release:
+
+  * Reimplement commands and classes from current make-based boxer:
+    + bootstrap
+    + install
+    + Bootstrap::Multistrap
+    + Install::Device
+
+Later releases...
+
+  * Implement additional commands and classes to create a system:
+    + bless
+    + Bootstrap::Debootstrap
+    + Bootstrap::Live-build
+    + Bless::Extlinux
+  * Implement commands and classes to interact with an existing system:
+    + refresh
+    + detect
+    + distill
+  * Implement commands and classes to interact with config classes:
+    + list
+    + enable
+    + disable
+  * Implement commands and classes to echange config classes:
+    + push
+    + pull
+    + publish
+  * Implement trojan" functionality for install and bless classes, to
+    embed as trigger unfolding at first boot in target environment.
+  * Implement alternate CLI shim tools which mimic conventional tools,
+    to bring boxer flexibility to existing unmodified scripts.
+  * Implement web export and/or service usable with debian-installer for
+    static/live boxer-driven "Hands-off" <http://www.hands.com/d-i/>.

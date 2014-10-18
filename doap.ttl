@@ -1,0 +1,57 @@
+@prefix cpan-uri: <http://purl.org/NET/cpan-uri/terms#> .
+@prefix dc:    <http://purl.org/dc/terms/> .
+@prefix doap:  <http://usefulinc.com/ns/doap#> .
+@prefix doap-changeset: <http://ontologi.es/doap-changeset#> .
+@prefix doap-deps: <http://ontologi.es/doap-deps#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+<http://dev.perl.org/licenses/>
+	dc:title             "the same terms as the perl 5 programming language system itself".
+
+<http://purl.org/NET/cpan-uri/dist/Boxer/project>
+	a                    doap:Project;
+	cpan-uri:x_help_wanted <http://usefulinc.com/ns/doap#documenter>, <http://usefulinc.com/ns/doap#tester>;
+	dc:contributor       <http://purl.org/NET/cpan-uri/person/jonass>;
+	doap-deps:runtime-requirement [ doap-deps:on "App::Cmd 0"^^doap-deps:CpanId ], [ doap-deps:on "autodie 0"^^doap-deps:CpanId ], [ doap-deps:on "Path::Class 0"^^doap-deps:CpanId ], [
+		doap-deps:on "MooX::Types::MooseLike::Base 0"^^doap-deps:CpanId;
+	], [ doap-deps:on "Path::Tiny 0"^^doap-deps:CpanId ], [ doap-deps:on "Role::Commons 0"^^doap-deps:CpanId ], [ doap-deps:on "Try::Tiny 0"^^doap-deps:CpanId ], [
+		doap-deps:on "Types::Path::Tiny 0"^^doap-deps:CpanId;
+	], [ doap-deps:on "Types::Standard 0"^^doap-deps:CpanId ], [ doap-deps:on "YAML::XS 0"^^doap-deps:CpanId ], [ doap-deps:on "strictures 0"^^doap-deps:CpanId ], [ doap-deps:on "Capture::Tiny 0"^^doap-deps:CpanId ], [ doap-deps:on "File::HomeDir 0"^^doap-deps:CpanId ], [ doap-deps:on "JSON 2.00"^^doap-deps:CpanId ], [ doap-deps:on "match::simple 0"^^doap-deps:CpanId ], [ doap-deps:on "Module::Runtime"^^doap-deps:CpanId ], [ doap-deps:on "Moo 1.000000"^^doap-deps:CpanId ], [ doap-deps:on "namespace::clean 0"^^doap-deps:CpanId ];
+	doap-deps:test-requirement [ doap-deps:on "Test::More 0.61"^^doap-deps:CpanId ], [ doap-deps:on "English 0"^^doap-deps:CpanId ], [ doap-deps:on "File::Spec 0"^^doap-deps:CpanId ], [ doap-deps:on "Test::Compile 0"^^doap-deps:CpanId ], [ doap-deps:on "Test::Fixme 0"^^doap-deps:CpanId ], [
+		doap-deps:on "Test::MinimumVersion 0"^^doap-deps:CpanId;
+	], [ doap-deps:on "Test::Pod 1.00"^^doap-deps:CpanId ], [ doap-deps:on "Test::Synopsis 0"^^doap-deps:CpanId ];
+	doap:bug-database    <http://rt.cpan.org/Dist/Display.html?Queue=App-Boxer>;
+	doap:category        [ rdfs:label "Debian" ], [ rdfs:label "Distribution" ];
+	doap:created         "2013-02-12"^^xsd:date;
+	doap:developer       <http://purl.org/NET/cpan-uri/person/jonass>;
+	doap:download-page   <https://metacpan.org/release/App-Boxer>, <https://metacpan.org/release/Boxer>;
+	doap:homepage        <https://metacpan.org/release/App-Boxer>, <https://metacpan.org/release/Boxer>;
+	doap:license         <http://dev.perl.org/licenses/>;
+	doap:maintainer      <http://purl.org/NET/cpan-uri/person/jonass>;
+	doap:name            "Boxer";
+	doap:programming-language "Perl";
+	doap:release         <http://purl.org/NET/cpan-uri/dist/Boxer/v_0-001>;
+	doap:repository      [
+		a doap:GitRepository;
+		doap:browse <https://anonscm.debian.org/cgit/boxer/App-Boxer.git>;
+	];
+	doap:shortdesc       "boxer command line utils".
+
+<http://purl.org/NET/cpan-uri/dist/Boxer/v_0-001>
+	a                    doap:Version;
+	rdfs:label           "Initial release.";
+	dc:identifier        "Boxer-0.001"^^xsd:string;
+	dc:issued            "2013-02-16"^^xsd:date;
+	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/jonass>;
+	doap:file-release    <http://backpan.cpan.org/authors/id/J/JO/JONASS/Boxer-0.001.tar.gz>;
+	doap:revision        "0.001"^^xsd:string.
+
+<http://purl.org/NET/cpan-uri/person/jonass>
+	a                    foaf:Person;
+	foaf:mbox            <mailto:dr@jones.dk>, <mailto:jonass@cpan.org>;
+	foaf:name            "Jonas Smedegaard";
+	foaf:nick            "JONASS";
+	foaf:page            <https://metacpan.org/author/JONASS>.
+
