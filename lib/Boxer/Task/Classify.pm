@@ -17,7 +17,7 @@ use YAML::XS;
 use Role::Commons -all;
 
 our $AUTHORITY = 'cpan:JONASS';
-our $VERSION   = '0.001';
+our $VERSION   = '0.002';
 
 my $workdir = Dir->plus_coercions(
 	Str,   q{ 'Path::Tiny'->new($_) },

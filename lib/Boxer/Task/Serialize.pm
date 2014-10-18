@@ -16,7 +16,7 @@ use Try::Tiny;
 use Role::Commons -all;
 
 our $AUTHORITY = 'cpan:JONASS';
-our $VERSION   = '0.001';
+our $VERSION   = '0.002';
 
 has data => (
 	is       => 'ro',

@@ -11,7 +11,7 @@ use 5.01;
 use Role::Commons -all;
 
 our $AUTHORITY = 'cpan:JONASS';
-our $VERSION   = '0.001';
+our $VERSION   = '0.002';
 
 1;
 

@@ -22,20 +22,20 @@
 	doap-deps:test-requirement [ doap-deps:on "Test::More 0.61"^^doap-deps:CpanId ], [ doap-deps:on "English 0"^^doap-deps:CpanId ], [ doap-deps:on "File::Spec 0"^^doap-deps:CpanId ], [ doap-deps:on "Test::Compile 0"^^doap-deps:CpanId ], [ doap-deps:on "Test::Fixme 0"^^doap-deps:CpanId ], [
 		doap-deps:on "Test::MinimumVersion 0"^^doap-deps:CpanId;
 	], [ doap-deps:on "Test::Pod 1.00"^^doap-deps:CpanId ], [ doap-deps:on "Test::Synopsis 0"^^doap-deps:CpanId ];
-	doap:bug-database    <http://rt.cpan.org/Dist/Display.html?Queue=App-Boxer>;
+	doap:bug-database    <http://rt.cpan.org/Dist/Display.html?Queue=Boxer>;
 	doap:category        [ rdfs:label "Debian" ], [ rdfs:label "Distribution" ];
 	doap:created         "2013-02-12"^^xsd:date;
 	doap:developer       <http://purl.org/NET/cpan-uri/person/jonass>;
-	doap:download-page   <https://metacpan.org/release/App-Boxer>, <https://metacpan.org/release/Boxer>;
-	doap:homepage        <https://metacpan.org/release/App-Boxer>, <https://metacpan.org/release/Boxer>;
+	doap:download-page   <https://metacpan.org/release/Boxer>;
+	doap:homepage        <https://metacpan.org/release/Boxer>, <https://wiki.debian.org/Boxer>;
 	doap:license         <http://dev.perl.org/licenses/>;
 	doap:maintainer      <http://purl.org/NET/cpan-uri/person/jonass>;
 	doap:name            "Boxer";
 	doap:programming-language "Perl";
-	doap:release         <http://purl.org/NET/cpan-uri/dist/Boxer/v_0-001>;
+	doap:release         <http://purl.org/NET/cpan-uri/dist/Boxer/v_0-001>, <http://purl.org/NET/cpan-uri/dist/Boxer/v_0-002>;
 	doap:repository      [
 		a doap:GitRepository;
-		doap:browse <https://anonscm.debian.org/cgit/boxer/App-Boxer.git>;
+		doap:browse <https://anonscm.debian.org/cgit/boxer/Boxer.git>;
 	];
 	doap:shortdesc       "boxer command line utils".
 
@@ -43,10 +43,28 @@
 	a                    doap:Version;
 	rdfs:label           "Initial release.";
 	dc:identifier        "Boxer-0.001"^^xsd:string;
-	dc:issued            "2013-02-16"^^xsd:date;
+	dc:issued            "2014-10-18"^^xsd:date;
 	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/jonass>;
 	doap:file-release    <http://backpan.cpan.org/authors/id/J/JO/JONASS/Boxer-0.001.tar.gz>;
 	doap:revision        "0.001"^^xsd:string.
+
+<http://purl.org/NET/cpan-uri/dist/Boxer/v_0-002>
+	a                    doap:Version;
+	dc:identifier        "Boxer-0.002"^^xsd:string;
+	dc:issued            "2014-10-19"^^xsd:date;
+	doap-changeset:changeset [
+		doap-changeset:item [
+			a doap-changeset:Packaging;
+			rdfs:label "Fix time of initial release.";
+		], [
+			a doap-changeset:Packaging;
+			rdfs:label "Fix all references to distribution name.";
+			doap-changeset:thanks <http://purl.org/NET/cpan-uri/person/tobyink>;
+		];
+	];
+	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/jonass>;
+	doap:file-release    <http://backpan.cpan.org/authors/id/J/JO/JONASS/Boxer-0.002.tar.gz>;
+	doap:revision        "0.002"^^xsd:string.
 
 <http://purl.org/NET/cpan-uri/person/jonass>
 	a                    foaf:Person;
@@ -54,4 +72,11 @@
 	foaf:name            "Jonas Smedegaard";
 	foaf:nick            "JONASS";
 	foaf:page            <https://metacpan.org/author/JONASS>.
+
+<http://purl.org/NET/cpan-uri/person/tobyink>
+	a                    foaf:Person;
+	foaf:mbox            <mailto:tobyink@cpan.org>;
+	foaf:name            "Toby Inkster";
+	foaf:nick            "TOBYINK";
+	foaf:page            <https://metacpan.org/author/TOBYINK>.
 

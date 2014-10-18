@@ -8,7 +8,7 @@ use MooX::Types::MooseLike::Base qw< Bool >;
 use Role::Commons -all;
 
 our $AUTHORITY = 'cpan:JONASS';
-our $VERSION   = '0.001';
+our $VERSION   = '0.002';
 
 has verbose => (
 	is       => 'rw',

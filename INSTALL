@@ -15,12 +15,12 @@ Install needed packages:
 
 Pull code and data from git:
 
-    git clone git://git.debian.org/boxer/App-Boxer
+    git clone git://git.debian.org/boxer/Boxer
     git clone git://source.jones.dk/blends
 
 Execute with explicit paths to local library and data:
 
-    cd App-Boxer
+    cd Boxer
     PERL5LIB=lib bin/boxer compose --datadir ../blends debian-parl-eu wheezy
 
 
