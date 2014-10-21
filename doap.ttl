@@ -14,11 +14,15 @@
 	a                    doap:Project;
 	cpan-uri:x_help_wanted <http://usefulinc.com/ns/doap#documenter>, <http://usefulinc.com/ns/doap#tester>;
 	dc:contributor       <http://purl.org/NET/cpan-uri/person/jonass>;
-	doap-deps:runtime-requirement [ doap-deps:on "App::Cmd 0"^^doap-deps:CpanId ], [ doap-deps:on "autodie 0"^^doap-deps:CpanId ], [ doap-deps:on "Path::Class 0"^^doap-deps:CpanId ], [
+	doap-deps:runtime-requirement [ doap-deps:on "App::Cmd 0"^^doap-deps:CpanId ], [ doap-deps:on "autodie 0"^^doap-deps:CpanId ], [ doap-deps:on "Module::Runtime"^^doap-deps:CpanId ], [ doap-deps:on "Moo 1.001000"^^doap-deps:CpanId ], [ doap-deps:on "MooX::Log::Any 0"^^doap-deps:CpanId ], [ doap-deps:on "namespace::clean 0"^^doap-deps:CpanId ], [ doap-deps:on "Path::Class 0"^^doap-deps:CpanId ], [
 		doap-deps:on "MooX::Types::MooseLike::Base 0"^^doap-deps:CpanId;
 	], [ doap-deps:on "Path::Tiny 0"^^doap-deps:CpanId ], [ doap-deps:on "Role::Commons 0"^^doap-deps:CpanId ], [ doap-deps:on "Try::Tiny 0"^^doap-deps:CpanId ], [
 		doap-deps:on "Types::Path::Tiny 0"^^doap-deps:CpanId;
-	], [ doap-deps:on "Types::Standard 0"^^doap-deps:CpanId ], [ doap-deps:on "YAML::XS 0"^^doap-deps:CpanId ], [ doap-deps:on "strictures 0"^^doap-deps:CpanId ], [ doap-deps:on "Capture::Tiny 0"^^doap-deps:CpanId ], [ doap-deps:on "File::HomeDir 0"^^doap-deps:CpanId ], [ doap-deps:on "JSON 2.00"^^doap-deps:CpanId ], [ doap-deps:on "match::simple 0"^^doap-deps:CpanId ], [ doap-deps:on "Module::Runtime"^^doap-deps:CpanId ], [ doap-deps:on "Moo 1.000000"^^doap-deps:CpanId ], [ doap-deps:on "namespace::clean 0"^^doap-deps:CpanId ];
+	], [
+		doap-deps:on "IPC::System::Simple 0"^^doap-deps:CpanId;
+	], [ doap-deps:on "Types::Standard 0"^^doap-deps:CpanId ], [ doap-deps:on "YAML::XS 0"^^doap-deps:CpanId ], [ doap-deps:on "perl 5.010001"^^doap-deps:CpanId ], [ doap-deps:on "strictures 0"^^doap-deps:CpanId ], [ doap-deps:on "Capture::Tiny 0"^^doap-deps:CpanId ], [ doap-deps:on "File::BaseDir 0"^^doap-deps:CpanId ], [ doap-deps:on "File::HomeDir 0"^^doap-deps:CpanId ], [
+		doap-deps:on "File::ShareDir::ProjectDistDir 0"^^doap-deps:CpanId;
+	], [ doap-deps:on "JSON 2.00"^^doap-deps:CpanId ], [ doap-deps:on "match::simple 0"^^doap-deps:CpanId ];
 	doap-deps:test-requirement [ doap-deps:on "Test::More 0.61"^^doap-deps:CpanId ], [ doap-deps:on "English 0"^^doap-deps:CpanId ], [ doap-deps:on "File::Spec 0"^^doap-deps:CpanId ], [ doap-deps:on "Test::Compile 0"^^doap-deps:CpanId ], [ doap-deps:on "Test::Fixme 0"^^doap-deps:CpanId ], [
 		doap-deps:on "Test::MinimumVersion 0"^^doap-deps:CpanId;
 	], [ doap-deps:on "Test::Pod 1.00"^^doap-deps:CpanId ], [ doap-deps:on "Test::Synopsis 0"^^doap-deps:CpanId ];
@@ -32,7 +36,7 @@
 	doap:maintainer      <http://purl.org/NET/cpan-uri/person/jonass>;
 	doap:name            "Boxer";
 	doap:programming-language "Perl";
-	doap:release         <http://purl.org/NET/cpan-uri/dist/Boxer/v_0-001>, <http://purl.org/NET/cpan-uri/dist/Boxer/v_0-002>;
+	doap:release         <http://purl.org/NET/cpan-uri/dist/Boxer/v_0-001>, <http://purl.org/NET/cpan-uri/dist/Boxer/v_0-002>, <http://purl.org/NET/cpan-uri/dist/Boxer/v_0-003>;
 	doap:repository      [
 		a doap:GitRepository;
 		doap:browse <https://anonscm.debian.org/cgit/boxer/Boxer.git>;
@@ -65,6 +69,47 @@
 	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/jonass>;
 	doap:file-release    <http://backpan.cpan.org/authors/id/J/JO/JONASS/Boxer-0.002.tar.gz>;
 	doap:revision        "0.002"^^xsd:string.
+
+<http://purl.org/NET/cpan-uri/dist/Boxer/v_0-003>
+	a                    doap:Version;
+	dc:identifier        "Boxer-0.003"^^xsd:string;
+	dc:issued            "2014-10-19"^^xsd:date;
+	doap-changeset:changeset [
+		doap-changeset:item [
+			a doap-changeset:Packaging;
+			rdfs:label "Fix copyright coverage to include current year.";
+		], [
+			a doap-changeset:Documentation;
+			rdfs:label "Update INSTALL file and pod synopsis slightly.";
+		], [
+			a doap-changeset:Change;
+			rdfs:label "Explicitly use IPC::System::Simple (already implicitly used via autodie + system() call).";
+		], [
+			a doap-changeset:Packaging;
+			rdfs:label "Fix require MooX::Log::Any.";
+		], [
+			a doap-changeset:Packaging;
+			rdfs:label "Require IPC::System::Simple.";
+		], [
+			a doap-changeset:Addition;
+			rdfs:label "Include builting skeleton files, and ship with example classes and nodes.";
+		], [
+			a doap-changeset:Packaging;
+			rdfs:label "Tighten Moo requirement to at least 1.001000 (older are untested with Type::Tiny).";
+		], [
+			a doap-changeset:Change;
+			rdfs:label "Refactor to strip undefined args handed over internally - a.k.a. coerce Undef to default, to permit callers to sloppily pass App::Cmd options as-is.";
+		], [
+			a doap-changeset:Change;
+			rdfs:label "Add --suite option (and drop it as 2nd argument) in compose command, allowing multiple nodes instead.";
+		], [
+			a doap-changeset:Addition;
+			rdfs:label "Handle nodes, classes and skeleton files with separate options in compose command.";
+		];
+	];
+	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/jonass>;
+	doap:file-release    <http://backpan.cpan.org/authors/id/J/JO/JONASS/Boxer-0.003.tar.gz>;
+	doap:revision        "0.003"^^xsd:string.
 
 <http://purl.org/NET/cpan-uri/person/jonass>
 	a                    foaf:Person;

@@ -1,0 +1,11 @@
+classes:
+  - Desktop.media.audio.pulseaudio
+parameters:
+  doc:
+    desktop-media:
+      pkg:
+        - include mplayer2, with desktop and web browser wrappers
+  pkg:
+    - pulseaudio-esound-compat
+    - mplayer2
+    - gecko-mediaplayer

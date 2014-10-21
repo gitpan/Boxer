@@ -1,0 +1,13 @@
+#FIXME: include the tools being localized
+classes:
+  - Desktop
+parameters:
+  doc:
+    desktop:
+      pkg:
+        - include Danish desktop localization, with myspell dictionary
+  pkg:
+    - task-danish-desktop
+    - myspell-da
+  pkg-avoid:
+    - hunspell-da

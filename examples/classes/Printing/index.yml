@@ -1,0 +1,12 @@
+parameters:
+  doc:
+    printing:
+      headline:
+        - Printing
+  pkg:
+    - cups
+  pkg-avoid:
+    - ~cups
+    - ~printer-driver-all
+    - ~hplip
+    - ~hpijs

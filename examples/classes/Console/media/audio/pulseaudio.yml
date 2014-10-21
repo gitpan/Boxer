@@ -1,0 +1,9 @@
+classes:
+  - Console.media
+parameters:
+  doc:
+    console-media:
+      pkg:
+        - include PulseAudio audio daemon
+  pkg:
+    - pulseaudio

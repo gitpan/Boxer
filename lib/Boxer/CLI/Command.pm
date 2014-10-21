@@ -12,7 +12,7 @@ use Path::Class qw<>;
 use Role::Commons -all;
 
 our $AUTHORITY = 'cpan:JONASS';
-our $VERSION   = '0.002';
+our $VERSION   = '0.003';
 
 my %config;
 

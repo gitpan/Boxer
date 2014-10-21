@@ -1,0 +1,10 @@
+classes:
+  - Admin
+parameters:
+  doc:
+    admin:
+      pkg:
+        - include administration tools
+  pkg:
+    - apt-listbugs
+    - apt-listchanges

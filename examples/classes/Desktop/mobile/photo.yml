@@ -1,0 +1,9 @@
+classes:
+  - Desktop.mobile
+parameters:
+  doc:
+    desktop-mobile:
+      pkg:
+        - include photo manager Shotwell
+  pkg:
+    - shotwell

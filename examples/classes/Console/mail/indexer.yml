@@ -1,0 +1,9 @@
+classes:
+  - Console
+parameters:
+  doc:
+    console:
+      pkg:
+        - include console mail indexer Notmuch
+  pkg:
+    - notmuch

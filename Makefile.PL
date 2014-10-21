@@ -17,27 +17,34 @@ my $meta = {
   "name"               => "Boxer",
   "no_index"           => { directory => ["eg", "examples", "inc", "t", "xt"] },
   "prereqs"            => {
-                            configure => { requires => { "ExtUtils::MakeMaker" => 6.17 } },
+                            configure => {
+                              requires => { "ExtUtils::MakeMaker" => 6.17, "File::ShareDir::Install" => 0.02 },
+                            },
                             runtime => {
                               requires => {
-                                "App::Cmd"                     => 0,
-                                "autodie"                      => 0,
-                                "Capture::Tiny"                => 0,
-                                "File::HomeDir"                => 0,
-                                "JSON"                         => "2.00",
-                                "match::simple"                => 0,
-                                "Module::Runtime"              => 0,
-                                "Moo"                          => "1.000000",
-                                "MooX::Types::MooseLike::Base" => 0,
-                                "namespace::clean"             => 0,
-                                "Path::Class"                  => 0,
-                                "Path::Tiny"                   => 0,
-                                "Role::Commons"                => 0,
-                                "strictures"                   => 0,
-                                "Try::Tiny"                    => 0,
-                                "Types::Path::Tiny"            => 0,
-                                "Types::Standard"              => 0,
-                                "YAML::XS"                     => 0,
+                                "App::Cmd"                       => 0,
+                                "autodie"                        => 0,
+                                "Capture::Tiny"                  => 0,
+                                "File::BaseDir"                  => 0,
+                                "File::HomeDir"                  => 0,
+                                "File::ShareDir::ProjectDistDir" => 0,
+                                "IPC::System::Simple"            => 0,
+                                "JSON"                           => "2.00",
+                                "match::simple"                  => 0,
+                                "Module::Runtime"                => 0,
+                                "Moo"                            => "1.001000",
+                                "MooX::Log::Any"                 => 0,
+                                "MooX::Types::MooseLike::Base"   => 0,
+                                "namespace::clean"               => 0,
+                                "Path::Class"                    => 0,
+                                "Path::Tiny"                     => 0,
+                                "perl"                           => 5.010001,
+                                "Role::Commons"                  => 0,
+                                "strictures"                     => 0,
+                                "Try::Tiny"                      => 0,
+                                "Types::Path::Tiny"              => 0,
+                                "Types::Standard"                => 0,
+                                "YAML::XS"                       => 0,
                               },
                             },
                             test => {
@@ -54,17 +61,17 @@ my $meta = {
                             },
                           },
   "provides"           => {
-                            "Boxer" => { file => "lib/Boxer.pm", version => 0.002 },
-                            "Boxer::CLI" => { file => "lib/Boxer/CLI.pm", version => 0.002 },
-                            "Boxer::CLI::Command" => { file => "lib/Boxer/CLI/Command.pm", version => 0.002 },
-                            "Boxer::CLI::Command::About" => { file => "lib/Boxer/CLI/Command/About.pm", version => 0.002 },
-                            "Boxer::CLI::Command::Aliases" => { file => "lib/Boxer/CLI/Command/Aliases.pm", version => 0.002 },
-                            "Boxer::CLI::Command::Commands" => { file => "lib/Boxer/CLI/Command/Commands.pm", version => 0.002 },
-                            "Boxer::CLI::Command::Compose" => { file => "lib/Boxer/CLI/Command/Compose.pm", version => 0.002 },
-                            "Boxer::Role::Interact" => { file => "lib/Boxer/Role/Interact.pm", version => 0.002 },
-                            "Boxer::Task" => { file => "lib/Boxer/Task.pm", version => 0.002 },
-                            "Boxer::Task::Classify" => { file => "lib/Boxer/Task/Classify.pm", version => 0.002 },
-                            "Boxer::Task::Serialize" => { file => "lib/Boxer/Task/Serialize.pm", version => 0.002 },
+                            "Boxer" => { file => "lib/Boxer.pm", version => 0.003 },
+                            "Boxer::CLI" => { file => "lib/Boxer/CLI.pm", version => 0.003 },
+                            "Boxer::CLI::Command" => { file => "lib/Boxer/CLI/Command.pm", version => 0.003 },
+                            "Boxer::CLI::Command::About" => { file => "lib/Boxer/CLI/Command/About.pm", version => 0.003 },
+                            "Boxer::CLI::Command::Aliases" => { file => "lib/Boxer/CLI/Command/Aliases.pm", version => 0.003 },
+                            "Boxer::CLI::Command::Commands" => { file => "lib/Boxer/CLI/Command/Commands.pm", version => 0.003 },
+                            "Boxer::CLI::Command::Compose" => { file => "lib/Boxer/CLI/Command/Compose.pm", version => 0.003 },
+                            "Boxer::Role::Interact" => { file => "lib/Boxer/Role/Interact.pm", version => 0.003 },
+                            "Boxer::Task" => { file => "lib/Boxer/Task.pm", version => 0.003 },
+                            "Boxer::Task::Classify" => { file => "lib/Boxer/Task/Classify.pm", version => 0.003 },
+                            "Boxer::Task::Serialize" => { file => "lib/Boxer/Task/Serialize.pm", version => 0.003 },
                           },
   "release_status"     => "stable",
   "resources"          => {
@@ -77,8 +84,8 @@ my $meta = {
                                             },
                             x_identifier => "http://purl.org/NET/cpan-uri/dist/Boxer/project",
                           },
-  "version"            => 0.002,
-  "x_help_wanted"      => ["documenter", "tester"],
+  "version"            => 0.003,
+  "x_help_wanted"      => ["tester", "documenter"],
   "x_provides_scripts" => { boxer => { file => "bin/boxer" } },
 };
 
@@ -173,6 +180,10 @@ sub FixMakefile
 	print MAKEFILE $makefile or die $!;
 	close MAKEFILE or die $!;
 }
+
+use File::ShareDir::Install;
+install_share 'share';
+{ package MY; use File::ShareDir::Install qw(postamble) };
 
 my $mm = WriteMakefile(%WriteMakefileArgs);
 FixMakefile($mm->{FIRST_MAKEFILE} || 'Makefile');

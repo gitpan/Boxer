@@ -1,0 +1,11 @@
+classes:
+  - Hardware.crypto
+  - Desktop
+parameters:
+  doc:
+    desktop:
+      pkg:
+        - include desktop crypto helper tools
+  pkg:
+    - parcimonie
+    - gnome-disk-utility

@@ -1,0 +1,11 @@
+#TODO: move deluged to server class
+classes:
+  - Desktop
+parameters:
+  doc:
+    desktop:
+      pkg:
+        - include BitTorrent client Deluge
+  pkg:
+    - deluge
+    - deluged

@@ -1,0 +1,11 @@
+classes:
+  - Admin
+parameters:
+  doc:
+    admin:
+      tweak:
+        - include APT frontend aptitude
+  pkg:
+    - aptitude
+  pkg-auto:
+    - aptitude-common

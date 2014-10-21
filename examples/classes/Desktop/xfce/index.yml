@@ -1,0 +1,37 @@
+#TODO: Stop listing gvfs when DebianParl 1.0.5 is obsolete
+#TODO: figure out why xfce4-session.xml backup tweak need sed indented
+classes:
+  - x11.xdg.icons
+  - x11.lightdm.gtk
+  - Desktop
+  - Desktop.tools
+parameters:
+  doc:
+    desktop:
+      pkg:
+        - include the lightweight Xfce desktop
+      tweak:
+        - silence confusing panel question at initial login
+        - replace appfinder with mail-reader in default panel
+        - disable storing session at logout by default
+  pkg:
+    - gvfs
+    - xfce4-session
+  pkg-auto:
+    - gvfs
+  pkg-avoid:
+    - xfce4-volumed
+  tweak:
+    - >
+      cd /target/etc/xdg/xfce4/xfconf/xfce-perchannel-xml
+    - >
+      _clone ../../panel/default.xml xfce4-panel.xml
+    - >
+      sed -i -r \
+        -e 's,xfce4-appfinder,exo-mail-reader,' \
+        xfce4-panel.xml
+    - >
+      _backup xfce4-session.xml;\
+       sed -i -r \
+        -e 's,(<property name="general"[^>]*>),\1\n    <property name="SaveOnExit" type="bool" value="false"/>,' \
+        xfce4-session.xml

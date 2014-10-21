@@ -1,0 +1,13 @@
+classes:
+  - Admin.apt.auto.core
+parameters:
+  doc:
+    admin:
+      tweak:
+        - fix mark auto-installed misc. packages relevant only as dependencies
+  pkg-auto:
+    - vim-common
+  tweak:
+    - >
+      chroot /target apt-mark auto \
+        __PKGAUTOLIST__

@@ -1,0 +1,9 @@
+classes:
+  - Console.mail.indexer
+parameters:
+  doc:
+    console-mail:
+      pkg:
+        - include indexed-mail client Alot
+  pkg:
+    - alot

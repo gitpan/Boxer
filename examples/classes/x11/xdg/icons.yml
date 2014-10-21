@@ -1,0 +1,5 @@
+classes:
+  - x11
+parameters:
+  pkg:
+    - tango-icon-theme

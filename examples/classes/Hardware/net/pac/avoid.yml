@@ -1,0 +1,9 @@
+classes:
+  - Hardware
+parameters:
+  doc:
+    hardware:
+      pkg:
+        - exclude webkit library (used only for maybe-risky PAC proxy parsing)
+  pkg-avoid:
+    - libwebkitgtk-1.0-0

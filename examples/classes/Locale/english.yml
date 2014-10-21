@@ -1,0 +1,9 @@
+classes:
+  - Locale
+parameters:
+  doc:
+    locale:
+      pkg:
+        - include core English localization
+  pkg:
+    - task-english

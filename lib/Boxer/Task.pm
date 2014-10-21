@@ -11,6 +11,6 @@ with 'MooX::Log::Any', 'Boxer::Role::Interact';
 use Role::Commons -all;
 
 our $AUTHORITY = 'cpan:JONASS';
-our $VERSION   = '0.002';
+our $VERSION   = '0.003';
 
 1;

@@ -1,0 +1,9 @@
+classes:
+  - Hardware
+parameters:
+  doc:
+    hardware:
+      pkg-nonfree:
+        - include non-free Broadcom 43xx "STA" WiFi/Bluetooth driver
+  pkg-nonfree:
+    - broadcom-sta-dkms

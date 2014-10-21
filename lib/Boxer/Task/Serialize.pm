@@ -12,11 +12,20 @@ use Types::Standard qw( HashRef Str Undef );
 use Types::Path::Tiny qw( Dir File Path );
 use Path::Tiny;
 use Try::Tiny;
+use File::ShareDir::ProjectDistDir;
 
 use Role::Commons -all;
 
 our $AUTHORITY = 'cpan:JONASS';
-our $VERSION   = '0.002';
+our $VERSION   = '0.003';
+
+# permit callers to sloppily pass undefined hash values
+sub BUILDARGS
+{
+	my ( $class, %args ) = @_;
+	delete @args{ grep !defined( $args{$_} ), keys %args };
+	return {%args};
+}
 
 has data => (
 	is       => 'ro',
@@ -24,24 +33,12 @@ has data => (
 	required => 1,
 );
 
-my $workdir = Dir->plus_coercions(
-	Str,   q{ 'Path::Tiny'->new($_) },
-	Undef, q{ 'Path::Tiny'->cwd },
-);
-
-has datadir => (
-	is       => 'ro',
-	isa      => $workdir,
-	coerce   => $workdir->coercion,
-	required => 1,
-);
-
 has skeldir => (
-	is       => 'lazy',
+	is       => 'ro',
 	isa      => Dir,
 	coerce   => Dir->coercion,
 	required => 1,
-	default  => sub { $_[0]->datadir->child('skel') },
+	default  => sub { Path::Tiny->new( dist_dir('Boxer') )->child('skel') },
 );
 
 has infile => (

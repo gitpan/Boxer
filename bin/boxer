@@ -13,8 +13,10 @@ boxer - boxer command line utils
 
 =head1 SYNOPSIS
 
-    $ boxer compose --datadir ~/blends parl-desktop-eu wheezy
-    Done: composed parl-desktop-eu as preseed.cfg and script.sh
+    $ boxer compose parl-greens
+    Done: composed preseed.cfg and script.sh for a DebianParl system
+
+    # TODO: below command are not yet implemented
 
     $ boxer install
     [...]
@@ -118,7 +120,7 @@ Jonas Smedegaard E<lt>dr@jones.dkE<gt>.
 
 =head1 COPYRIGHT AND LICENCE
 
-This software is copyright (c) 2013 by Jonas Smedegaard.
+This software is copyright (c) 2013-2014 by Jonas Smedegaard.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

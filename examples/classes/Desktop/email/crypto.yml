@@ -1,0 +1,9 @@
+classes:
+  - Desktop.email
+parameters:
+  doc:
+    desktop-email:
+      pkg:
+        - include Icedove PGP plugin
+  pkg:
+    - enigmail

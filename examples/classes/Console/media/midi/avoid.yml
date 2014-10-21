@@ -1,0 +1,9 @@
+classes:
+  - Console.media
+parameters:
+  doc:
+    console-media:
+      pkg:
+        - exclude MIDI patches
+  pkg-avoid:
+    - freepats

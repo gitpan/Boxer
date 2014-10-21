@@ -1,0 +1,11 @@
+classes:
+  - Desktop
+  - Desktop.tools
+parameters:
+  doc:
+    desktop:
+      pkg:
+        - include geek-friendly window manager Awesome
+  pkg:
+    - awesome
+    - awesome-extra

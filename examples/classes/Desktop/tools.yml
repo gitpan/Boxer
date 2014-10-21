@@ -1,0 +1,10 @@
+classes:
+  - Desktop
+parameters:
+  doc:
+    desktop:
+      pkg:
+        - include desktop helper tools
+  pkg:
+    - usermode
+    - network-manager-gnome

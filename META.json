@@ -30,17 +30,22 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "6.17"
+            "ExtUtils::MakeMaker" : "6.17",
+            "File::ShareDir::Install" : "0.02"
          }
       },
       "runtime" : {
          "requires" : {
             "App::Cmd" : "0",
             "Capture::Tiny" : "0",
+            "File::BaseDir" : "0",
             "File::HomeDir" : "0",
+            "File::ShareDir::ProjectDistDir" : "0",
+            "IPC::System::Simple" : "0",
             "JSON" : "2.00",
             "Module::Runtime" : "0",
-            "Moo" : "1.000000",
+            "Moo" : "1.001000",
+            "MooX::Log::Any" : "0",
             "MooX::Types::MooseLike::Base" : "0",
             "Path::Class" : "0",
             "Path::Tiny" : "0",
@@ -52,6 +57,7 @@
             "autodie" : "0",
             "match::simple" : "0",
             "namespace::clean" : "0",
+            "perl" : "5.010001",
             "strictures" : "0"
          }
       },
@@ -71,47 +77,47 @@
    "provides" : {
       "Boxer" : {
          "file" : "lib/Boxer.pm",
-         "version" : "0.002"
+         "version" : "0.003"
       },
       "Boxer::CLI" : {
          "file" : "lib/Boxer/CLI.pm",
-         "version" : "0.002"
+         "version" : "0.003"
       },
       "Boxer::CLI::Command" : {
          "file" : "lib/Boxer/CLI/Command.pm",
-         "version" : "0.002"
+         "version" : "0.003"
       },
       "Boxer::CLI::Command::About" : {
          "file" : "lib/Boxer/CLI/Command/About.pm",
-         "version" : "0.002"
+         "version" : "0.003"
       },
       "Boxer::CLI::Command::Aliases" : {
          "file" : "lib/Boxer/CLI/Command/Aliases.pm",
-         "version" : "0.002"
+         "version" : "0.003"
       },
       "Boxer::CLI::Command::Commands" : {
          "file" : "lib/Boxer/CLI/Command/Commands.pm",
-         "version" : "0.002"
+         "version" : "0.003"
       },
       "Boxer::CLI::Command::Compose" : {
          "file" : "lib/Boxer/CLI/Command/Compose.pm",
-         "version" : "0.002"
+         "version" : "0.003"
       },
       "Boxer::Role::Interact" : {
          "file" : "lib/Boxer/Role/Interact.pm",
-         "version" : "0.002"
+         "version" : "0.003"
       },
       "Boxer::Task" : {
          "file" : "lib/Boxer/Task.pm",
-         "version" : "0.002"
+         "version" : "0.003"
       },
       "Boxer::Task::Classify" : {
          "file" : "lib/Boxer/Task/Classify.pm",
-         "version" : "0.002"
+         "version" : "0.003"
       },
       "Boxer::Task::Serialize" : {
          "file" : "lib/Boxer/Task/Serialize.pm",
-         "version" : "0.002"
+         "version" : "0.003"
       }
    },
    "release_status" : "stable",
@@ -129,10 +135,10 @@
       },
       "x_identifier" : "http://purl.org/NET/cpan-uri/dist/Boxer/project"
    },
-   "version" : "0.002",
+   "version" : "0.003",
    "x_help_wanted" : [
-      "documenter",
-      "tester"
+      "tester",
+      "documenter"
    ],
    "x_provides_scripts" : {
       "boxer" : {

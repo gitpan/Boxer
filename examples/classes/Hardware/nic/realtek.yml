@@ -1,0 +1,9 @@
+classes:
+  - Hardware
+parameters:
+  doc:
+    hardware:
+      pkg-nonfree:
+        - include non-free firmware for Realtek NIC drivers
+  pkg-nonfree:
+    - firmware-realtek

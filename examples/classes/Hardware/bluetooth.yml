@@ -1,0 +1,11 @@
+classes:
+  - hw.acpi.full
+  - hw.bluetooth
+  - Hardware
+parameters:
+  doc:
+    hardware:
+      tweak:
+        - modernize logic of radio on/off button
+  tweak:
+    - _setvar /target/etc/default/acpi-support WIRELESS_BLUETOOTH_SYNC true

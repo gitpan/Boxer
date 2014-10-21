@@ -1,0 +1,15 @@
+classes:
+  - Hardware
+parameters:
+  doc:
+    hardware:
+      pkg:
+        - include misc. firmware blobs
+      pkg-nonfree:
+        - include misc. non-free firmware blobs
+  pkg:
+    - firmware-linux-free
+  pkg-nonfree:
+    - firmware-linux
+  pkg-nonfree-auto:
+    - firmware-linux-free

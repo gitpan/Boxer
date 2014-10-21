@@ -10,7 +10,7 @@ use namespace::clean;
 use Role::Commons -all;
 
 our $AUTHORITY = 'cpan:JONASS';
-our $VERSION   = '0.002';
+our $VERSION   = '0.003';
 
 require App::Cmd::Command::commands;
 our @ISA;

@@ -1,0 +1,27 @@
+classes:
+  - Hardware.laptop
+  - Hardware.gl
+  - Hardware.net.pac.avoid
+  - Admin.apt.aptitude
+  - Admin.apt.auto.all
+  - Admin.auto
+  - Console.media.audio.alsa
+  - Console.media.midi.avoid
+  - Console.media.gstreamer.avoid
+  - Desktop.xfce
+  - Desktop.xfce.power
+  - Desktop.screensaver.unicode
+  - Desktop.email.crypto
+  - Desktop.editor.mousepad
+  - Desktop.media.audio.alsa
+  - Desktop.media.video
+  - Desktop.mobile.sync
+  - Desktop.mobile.photo
+  - Desktop.crypto
+  - Desktop.office.gtk
+  - Desktop.office.word-processor
+  - Desktop.office.spreadsheet
+  - Desktop.office.presentation
+  - Desktop.office.pdf.gtk
+  - Desktop.scheduling
+  - Desktop.web.security

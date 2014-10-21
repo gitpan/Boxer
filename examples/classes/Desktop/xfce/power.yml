@@ -1,0 +1,10 @@
+classes:
+  - Desktop.xfce
+parameters:
+  doc:
+    desktop:
+      pkg:
+        - include Xfce power management tools
+  pkg:
+    - xfce4-power-manager
+    - xfce4-power-manager-plugins

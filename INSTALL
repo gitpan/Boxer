@@ -21,7 +21,7 @@ Pull code and data from git:
 Execute with explicit paths to local library and data:
 
     cd Boxer
-    PERL5LIB=lib bin/boxer compose --datadir ../blends debian-parl-eu wheezy
+    PERL5LIB=lib bin/boxer compose --datadir examples parl-greens
 
 
 Development

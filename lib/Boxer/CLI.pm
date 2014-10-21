@@ -9,7 +9,7 @@ use App::Cmd::Setup -app;
 use Role::Commons -all;
 
 our $AUTHORITY = 'cpan:JONASS';
-our $VERSION   = '0.002';
+our $VERSION   = '0.003';
 
 1;
 
@@ -38,7 +38,7 @@ Jonas Smedegaard E<lt>dr@jones.dkE<gt>.
 
 =head1 COPYRIGHT AND LICENCE
 
-This software is copyright (c) 2013 by Jonas Smedegaard.
+This software is copyright (c) 2013-2014 by Jonas Smedegaard.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

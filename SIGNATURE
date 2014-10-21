@@ -14,32 +14,217 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
-SHA1 917d35e612213cda659468165a531b6c4175da61 COPYRIGHT
+SHA1 df52c208d51e65812e388b634ce04a9082212bff COPYRIGHT
 SHA1 6c20c21af1aee1cc223733f8ad611d6e78ef790b CREDITS
-SHA1 fb1037215922b747e52fff6e8263cda93e5f76dd Changes
-SHA1 c4356ead232a0d85759b2b8505ef9baa181a5df0 INSTALL
+SHA1 6bd3bcee8c75669d6ef2076870479b1d0fe7823a Changes
+SHA1 4fe357db0ccfa99ec97c649a24640fbf843fc5f9 INSTALL
 SHA1 a3c43e7c3d894818d6435bb2cc9a0a9003402d59 LICENSE
-SHA1 df154f271eef9102a57f66b6db59d940626b1c44 MANIFEST
-SHA1 bf7f70c293bb1b60b3d43f848e2264bca60283db META.json
-SHA1 7cf3e861a597135d7b32e4b5e16fbadca43f9ed4 META.yml
-SHA1 2b34b8e1c161b8650735df16de3fcd474c5f2e3d Makefile.PL
-SHA1 5cb4d222b1bfa63378a8a4cbcd984a2e497d0531 README
+SHA1 eab9f94a6c828537045604e813a50bad1de45e45 MANIFEST
+SHA1 87fcd7af737a90b89e096234ea4ffd0a02aec1c3 META.json
+SHA1 5769a82ceba361abd85f1de30bf9fdd3acd91d13 META.yml
+SHA1 ebc9a5c24ebcd36d66b3f91c2be51f82f29aa9bf Makefile.PL
+SHA1 c742d0d015a631d442ed150fa99ee87e04dce2fc README
 SHA1 d571a1d9fd4bbe854692204c2f1b2fe5883f4a35 TODO
-SHA1 3f45ec0e74ddab916b23ee5102a275c8b85d21c4 bin/boxer
+SHA1 3809737df460a292311c36317ea46a898fc428eb bin/boxer
 SHA1 c59760e54130231bcd42e193e41df8420a5d8bd9 dist.ini
-SHA1 b81aeefeb10bab2f56c6ebb6cd7c97df20a88682 doap.ttl
+SHA1 89baff82a2504fe4e7d1773967707b1fda8d1e8b doap.ttl
 SHA1 f2f5df67593d316760b27e089157ab26ca1cc4e1 doc/boxer.svg
-SHA1 56666650db34fb7967502ada1e40974d0874c41d lib/Boxer.pm
-SHA1 17c352ef7a79b42f3288fd627f5988fafab9e90c lib/Boxer/CLI.pm
-SHA1 b400e7b946b3e95998434dc3727e125ed6914f9d lib/Boxer/CLI/Command.pm
-SHA1 fcbe549d8f0f6ed09a3eb32eea0a5ba09793b249 lib/Boxer/CLI/Command/About.pm
-SHA1 7d54c28e721fa7c9206507e56aa0d91cbe4fe64e lib/Boxer/CLI/Command/Aliases.pm
-SHA1 b1878b654967e76912dd2a7a2fd61db6707dc484 lib/Boxer/CLI/Command/Commands.pm
-SHA1 2adc06fd561ec91b30cb354ebe85fc8bb6b360b3 lib/Boxer/CLI/Command/Compose.pm
-SHA1 2850a76eb11dddb3a87686dcb0b1f5a83cd7298d lib/Boxer/Role/Interact.pm
-SHA1 464c16a0bd71f1823135b3b79aea78923312f3d7 lib/Boxer/Task.pm
-SHA1 164cdb72449cbfe297c49d126275be28e81b497d lib/Boxer/Task/Classify.pm
-SHA1 d29ee18091962adc65bec092f38dc999f702c80b lib/Boxer/Task/Serialize.pm
+SHA1 919d3b2bb4100a6a9731e85c91f70f957e42364d examples/README
+SHA1 8370ef6eeb9934dc67531f2feb9758a6695b04b1 examples/classes/Admin/apt/aptitude/index.yml
+SHA1 1ef67565d09e78c82638963334b2903f071731ef examples/classes/Admin/apt/auto/all.yml
+SHA1 646ef44d5dbd9d14aae193fb82a38c0bd928b3c1 examples/classes/Admin/apt/auto/core.yml
+SHA1 e8c3843755fa88d2388088d95b0f9592d34bef05 examples/classes/Admin/apt/auto/functions.yml
+SHA1 e31e421015c05adffcc840c4ad548034544d8213 examples/classes/Admin/apt/popcon.yml
+SHA1 62368afcb8d9c247c250266cccc3a57c7a5ed35b examples/classes/Admin/apt/tools.yml
+SHA1 9d0232ac5c3fdf8bd4d69954ad346fcf9b3d86dd examples/classes/Admin/auto.yml
+SHA1 648f3b78723e18ee227f76e45e7e739badd4325e examples/classes/Admin/backup/index.yml
+SHA1 cd81f861eb10cb1af5b1f32cd2191cf060dd1640 examples/classes/Admin/backup/remote.yml
+SHA1 7f0ef298a2aead78475259af5407249b42f57f33 examples/classes/Admin/etc/functions.yml
+SHA1 e56168168297f74570cdb23df12c03d8933c3b76 examples/classes/Admin/etc/track.yml
+SHA1 9b2cbbda7cbf69e40ed2a846642f76205b87b90f examples/classes/Admin/harden/account/index.yml
+SHA1 b734e09988afccaf5a316ba56df61fa79b624412 examples/classes/Admin/harden/account/strong.yml
+SHA1 c39523b9774c744d0d98e7ec4663b7a6b0be72fc examples/classes/Admin/harden/index.yml
+SHA1 68e4cc94f2298d83340787b9f24bff23dde718e3 examples/classes/Admin/harden/trustweb.yml
+SHA1 0f550fe85a7fd84240d4abd8c9f53fad8be0a72a examples/classes/Admin/index.yml
+SHA1 abfb164ae2683c3e76a1421d384dd4df7553b1c1 examples/classes/Admin/lvm.yml
+SHA1 f4ef7bcd2dd0ff793801fb8e99a56975f5482712 examples/classes/Admin/tools.yml
+SHA1 f035eb083a1bf1e63199850de7b8ba10f495fc58 examples/classes/Blend/parl/desktop/ALL.yml
+SHA1 b00a24b5b1faa81b63b150c421c087382d253eda examples/classes/Blend/parl/desktop/EU.yml
+SHA1 1a1449e82171c55a68404bbfc74f2fa35b607aee examples/classes/Blend/parl/desktop/index.yml
+SHA1 0bce79ff6b06bb79f111aa9849b2a219270e912a examples/classes/Console/compression.yml
+SHA1 de5805ec976fc68b04f3fd43a4838c12f08fb24f examples/classes/Console/editor/index.yml
+SHA1 cfaaba5fdb748583febec07a445c3379eaee4534 examples/classes/Console/editor/vim.yml
+SHA1 f913ebc705c81b267c660566bb96bb0b50aa24e1 examples/classes/Console/filemanager.yml
+SHA1 d6f5c89f27b9527c39a553444fc143bc5548157a examples/classes/Console/index.yml
+SHA1 e1c9ce124bb10db18edbb4bac319819a4980633a examples/classes/Console/mail/alot.yml
+SHA1 fcb672771563705a292eddb052900b872d8e349e examples/classes/Console/mail/index.yml
+SHA1 7a903126427a0b10ae6bcf684383c088cad54657 examples/classes/Console/mail/indexer.yml
+SHA1 294862753c3108c6da0ca1ec8817cf33f83413d7 examples/classes/Console/mail/list/tools.yml
+SHA1 65758035251269b6bd315269b556602392554ce3 examples/classes/Console/mail/mutt.yml
+SHA1 492aab0060cefe2d0a833f2dd2c4bde1e0afa764 examples/classes/Console/mail/tools.yml
+SHA1 a5d535edaf50371accffa4a5bbf5d3ab431d279c examples/classes/Console/media/audio/alsa.yml
+SHA1 49cbc7646b0be664f482f353709579f25e890ed9 examples/classes/Console/media/audio/pulseaudio.yml
+SHA1 1a9c6cf681ff7d49712606a45b5d9f8ea9fbb906 examples/classes/Console/media/gstreamer/avoid.yml
+SHA1 e4ad6e1274a9bb49ce6b25927e7bcad39a0733aa examples/classes/Console/media/index.yml
+SHA1 e091df7b40f90e7ab79044d24909448910347cf2 examples/classes/Console/media/midi/avoid.yml
+SHA1 86a5a30d6d9323b7194f368205bb4134dc271057 examples/classes/Console/mobile/index.yml
+SHA1 d2f4f4c8172da0f08eb4d17aae261cc972679976 examples/classes/Console/mobile/sync.yml
+SHA1 da98ddd58abf9812d6168853677677d6cc1d7051 examples/classes/Console/mouse.yml
+SHA1 838591b9904ec3cc4d524ac19684dfc3cdf092e0 examples/classes/Console/multiplexer/index.yml
+SHA1 e8e2c7ce0b73849e78c5e0eb5596d9e6af106faf examples/classes/Console/tools.yml
+SHA1 f4e7f4843b0a5d6b6b0f784c8c5c66346c085030 examples/classes/Desktop/awesome.yml
+SHA1 68694b198eaea87e30dba471e4bca19d13a8b0ee examples/classes/Desktop/chat/index.yml
+SHA1 1eaca255408545bb554ac0e4bd228dfa0aeeda05 examples/classes/Desktop/chat/pidgin/crypto.yml
+SHA1 c253692b69f07adf4a9424fc57ab0aa13409d986 examples/classes/Desktop/chat/pidgin/index.yml
+SHA1 5c0b9660177d46aefe4d384679dd0ca5fd5b22d7 examples/classes/Desktop/crypto.yml
+SHA1 e2f5822567433655ed0032d1e2d7432e0ea2a767 examples/classes/Desktop/editor/mousepad.yml
+SHA1 a8b461bd540a43961747c91462c1923f32287040 examples/classes/Desktop/editor/pyroom.yml
+SHA1 474ab32715d335e5106d5e0708451833546a75f6 examples/classes/Desktop/email/bidi.yml
+SHA1 968706ab33fcb3e6cc8fb9c73947513ad0132966 examples/classes/Desktop/email/crypto.yml
+SHA1 528d1b988b0f021ac7fb88281db22c3d109a859e examples/classes/Desktop/email/index.yml
+SHA1 c883ce1ccc6487dbcdfdafaf0d21f9532977d612 examples/classes/Desktop/email/locale/ALL.yml
+SHA1 ef0f0980868c42a9e8f4e7da139f3cd83dd62dab examples/classes/Desktop/email/locale/AMERICAS.yml
+SHA1 1ddd76c988b8cc305169c832142a35bd751d90dd examples/classes/Desktop/email/locale/ASIA.yml
+SHA1 2657584e6c4be8f8e88c9fa5a49b97c9a88ecd3b examples/classes/Desktop/email/locale/EU.yml
+SHA1 1fc0ff86112f46e09d691c8fdff76637e14542ba examples/classes/Desktop/email/locale/EUROPE.yml
+SHA1 528cb47a6a44f043ac23a9ee63ea3bcf00a1f399 examples/classes/Desktop/email/locale/INDIA.yml
+SHA1 0276424b27909fd98e7b5f1e058811d0f1b7a6e0 examples/classes/Desktop/filesharing/bittorrent.yml
+SHA1 8215799a6ebf081c1c74ba330fc1cc1957b05ea1 examples/classes/Desktop/index.yml
+SHA1 6dfac55c124c7a3cbc124b36d74d28369b17d483 examples/classes/Desktop/locale/danish.yml
+SHA1 2dc7613f6f90b4fe106994bf02ad230a6260e57f examples/classes/Desktop/media/audio/alsa.yml
+SHA1 9c2578b2b07e2260026ee9df4eef28c462b1eb22 examples/classes/Desktop/media/audio/pulseaudio.yml
+SHA1 e2d269198eaf46949a1e44bff268597f009256a7 examples/classes/Desktop/media/index.yml
+SHA1 12ec3780816fa006b2201d13280950b7c661290d examples/classes/Desktop/media/video.yml
+SHA1 2c0b7699238e651e2a44a0e8e208a786cd73155c examples/classes/Desktop/mobile/index.yml
+SHA1 1a0203eddefde169e680696a1fcd04403e675048 examples/classes/Desktop/mobile/photo.yml
+SHA1 4562fb3c2826019e4f93f3a28d07f37365f394a9 examples/classes/Desktop/mobile/sync.yml
+SHA1 a2eeff7391633aadb97d6367b06f3cf97469b3a6 examples/classes/Desktop/office/gtk.yml
+SHA1 1ad20e2934e2fb1f9990029ad9aeb057c7995f1f examples/classes/Desktop/office/index.yml
+SHA1 6dbc9206453e2c7b1df79bc859e3f964cdf77e9f examples/classes/Desktop/office/locale/AFRICA.yml
+SHA1 41d0eb3ba8fb7bb9a4239d698c28be34721eeffa examples/classes/Desktop/office/locale/ALL.yml
+SHA1 ae270782294145a6da8c2e75cf7ac944649a4b0a examples/classes/Desktop/office/locale/AMERICAS.yml
+SHA1 e513e741ac320fa3b400f1de3f6ec2a338c02eee examples/classes/Desktop/office/locale/ASIA.yml
+SHA1 dadd85ba036c465ec6dc0464334c33481bafee9f examples/classes/Desktop/office/locale/EU.yml
+SHA1 e4aba019fe7de6f2cc546505ee4e95e7864186d6 examples/classes/Desktop/office/locale/EUROPE.yml
+SHA1 68a403b0d5603b205a268730fc5e7aa97f9353d7 examples/classes/Desktop/office/locale/INDIA.yml
+SHA1 cb9419cc0ab67538bff3c0fd1aa15cd1b7b8a599 examples/classes/Desktop/office/locale/ZA.yml
+SHA1 a202f90fdc333f0fd73201b15b29a3c4d6e704f1 examples/classes/Desktop/office/pdf/gtk.yml
+SHA1 d4cbe6721c8452be095f832292d9a07b377c7b86 examples/classes/Desktop/office/presentation.yml
+SHA1 a7562d3a27bbe2280a43dc152af1198e47681885 examples/classes/Desktop/office/spreadsheet.yml
+SHA1 f6fd85f4c1e26b1ca71c46b397d378eeeaccb97b examples/classes/Desktop/office/word-processor.yml
+SHA1 a4596b7fbd99cf853cb14884f6f5c349ac62ffc8 examples/classes/Desktop/scheduling/index.yml
+SHA1 b9432d2df4fcc39cd17e91e0bf386af27e85d11b examples/classes/Desktop/screensaver/unicode.yml
+SHA1 f5b520a40ae823ab8e33de565c17caca615eb0dd examples/classes/Desktop/tools.yml
+SHA1 ada91e6de7bd76043f7d88e2aa86bb7667a7a0eb examples/classes/Desktop/web/index.yml
+SHA1 90f0909e3205f95b1baeb39eb5d5c8b4bf290b16 examples/classes/Desktop/web/java.yml
+SHA1 d92cd2cb44b2572e7462d17d8c1a5f2ac77df1f4 examples/classes/Desktop/web/locale/AFRICA.yml
+SHA1 d6eaf17f4179d9ac59f53edf5998069a3ac81c48 examples/classes/Desktop/web/locale/ALL.yml
+SHA1 04f42a49bc3cc849aa02e3e0780439be51030aa1 examples/classes/Desktop/web/locale/AMERICAS.yml
+SHA1 63dab25bdea0930671e7cce46352f2aac27548d5 examples/classes/Desktop/web/locale/ASIA.yml
+SHA1 30eebe8b20feb891b21d0da667015c861ab81cbd examples/classes/Desktop/web/locale/EU.yml
+SHA1 e5949a390b06bf7ab4733e8f328e1b10e65805d7 examples/classes/Desktop/web/locale/EUROPE.yml
+SHA1 25cd26aa4eaca4b15a4f45e47e2971b1f39bed35 examples/classes/Desktop/web/locale/INDIA.yml
+SHA1 d132f43c602bc38f58ff23cc90b3c4733f40e8c8 examples/classes/Desktop/web/security.yml
+SHA1 c894a4c83e1cfa197787a89ceee58c3458c8cb4d examples/classes/Desktop/xfce/index.yml
+SHA1 98876c7169a768f51a50c71073143abc8a8a9271 examples/classes/Desktop/xfce/power.yml
+SHA1 8842448058b22ebc72999ce1fec2ae9860da1942 examples/classes/Hardware/bluetooth.yml
+SHA1 6b34c084f708e2fa87b326c8c40c74cfc98aa763 examples/classes/Hardware/crypto.yml
+SHA1 be06a2e95eb5ecf000392ea97dc6e8f19b9de7c3 examples/classes/Hardware/firmware.yml
+SHA1 7cc0fd6c3491c314fb88b7d6b1c6c1bb53baf544 examples/classes/Hardware/gl.yml
+SHA1 922c3dee0088ab16c918d9a583f29901952ca3a2 examples/classes/Hardware/index.yml
+SHA1 2c727ead1adb5708ec2aaa8678a83751c79a2d1c examples/classes/Hardware/laptop/acer/aao725.yml
+SHA1 90a985fdf1537caf77f910c2a4fa5c3df6366311 examples/classes/Hardware/laptop/apple/macbook2-1.yml
+SHA1 ec60c7e578cfc4674b2feae5342a2e5a0c9a3c44 examples/classes/Hardware/laptop/apple/macbook5-1.yml
+SHA1 a1e713d5a227ec3522d7963550e8d952d6457536 examples/classes/Hardware/laptop/index.yml
+SHA1 2dbf2e048a0cebf3699db1d80c9c6e4d8fea650a examples/classes/Hardware/laptop/lenovo/edge145.yml
+SHA1 c160f3d3f3699e97c9818a8bf723aa4be0594f57 examples/classes/Hardware/motherboard/amd/c60.yml
+SHA1 06406b355b0002193259061396c7629c2c6746de examples/classes/Hardware/motherboard/amd/e1-2500.yml
+SHA1 ddc47c9080f55fb5116e5de4e8e093e4a49bd90c examples/classes/Hardware/motherboard/intel/atom/32bit.yml
+SHA1 f20f2410be5592dcc739cd471414826446a2adc4 examples/classes/Hardware/motherboard/intel/core2duo.yml
+SHA1 2df3806a7f8d1bd06a0899007ade4db6c31ecdb8 examples/classes/Hardware/motherboard/intel/pentium3.yml
+SHA1 88d218f87458c1b2f7b687af78607e4bb6938d76 examples/classes/Hardware/motherboard/via/nehemiah.yml
+SHA1 a8f9bbd8a32e1cf2ba8c5485f710d93a2b5dd9d5 examples/classes/Hardware/motherboard/via/samuel2.yml
+SHA1 6d965d784a11168bc29809730a23bd2d4025e7e9 examples/classes/Hardware/net/pac/avoid.yml
+SHA1 21c8afff41afe3d68f1ff38df299100254800429 examples/classes/Hardware/nic/broadcom/sta.yml
+SHA1 c6fbc4f7672058156cc1c12b664685f49477a29b examples/classes/Hardware/nic/realtek.yml
+SHA1 adf01fdecb11f15498dc9eca86fa195f63bec8fc examples/classes/Hardware/power.yml
+SHA1 d4e82ad6e593a053f5556b9cba4167d4ce577fde examples/classes/Language/index.yml
+SHA1 3c1ec1fe817e4126a93871d2fed410c9de4086ef examples/classes/Language/java/base.yml
+SHA1 07cf89422cf7a2d05716182a650e4e8610f49c66 examples/classes/Language/java/index.yml
+SHA1 2f5802f6f5baed2d92b675b6a7b4c38e8e30f058 examples/classes/Language/java/openjdk6/avoid.yml
+SHA1 03cd547c40961ad14e88dee97dba1ec57d5b2303 examples/classes/Language/java/openjdk6/index.yml
+SHA1 75f55c1380f56b0972c54a1cabe1f35084be2ac9 examples/classes/Language/java/openjdk7/avoid.yml
+SHA1 395298845cde814d2b7f8a8b0c9a6e906aa05ed1 examples/classes/Language/java/openjdk7/index.yml
+SHA1 b27a5bc55588e739bff00b61d87e383db9898f40 examples/classes/Locale/danish.yml
+SHA1 e121bfa223b86cc1c0c19a85936738b2a230706c examples/classes/Locale/english.yml
+SHA1 fbcc952cb01e15696e663edc899771868f350362 examples/classes/Locale/german.yml
+SHA1 aa488db6cfcdf011b127b257a53da775f6fe87c3 examples/classes/Locale/index.yml
+SHA1 0e75a067e7e9a674c7aa693b83335ea849f98761 examples/classes/Printing/bluetooth.yml
+SHA1 7a6c16ca2d08c66c6852c3f1ca4ab2d6ee43a691 examples/classes/Printing/index.yml
+SHA1 563b949398a6c65a566f403d7fb958037adc445e examples/classes/Service/antivirus.yml
+SHA1 33734486a14de89adb4dc8c411b9aad347966dd0 examples/classes/Service/dhcp/client.yml
+SHA1 ec996190865b86c7deb357f191fd835a2a71a1e1 examples/classes/Service/dhcp/index.yml
+SHA1 f2a33244cd0bc8de3fc92ce9b09caaa7fb2bcc2c examples/classes/Service/dns/autoritative.yml
+SHA1 747fe23ef585070e5bb0bbaecb06c35cdd54ef48 examples/classes/Service/dns/index.yml
+SHA1 04713b2959d7f8368e227329a21d87c0686e3641 examples/classes/Service/git.yml
+SHA1 59dc1f4f244c36ae1fe3bf2fb7052cc70fd7aa97 examples/classes/Service/ids.yml
+SHA1 bd85bfabed0e473b8e861208ca5d94def434bbe7 examples/classes/Service/index.yml
+SHA1 c420d71382265653d39985b1ef75c97162362e93 examples/classes/Service/log/index.yml
+SHA1 fabadecac763be3b35411883e8fa66538747a859 examples/classes/Service/log/remote.yml
+SHA1 b24a4d209247c111caf0fa7d21010b96f30a4724 examples/classes/Service/mail/antispam.yml
+SHA1 9c24fc803ceb6651eda6c30c92550e2d555ba714 examples/classes/Service/mail/imap.yml
+SHA1 5e1b5f9ef7441fdb68ce97975ff49c23d38f1430 examples/classes/Service/mail/index.yml
+SHA1 b06836ed61ae8bd42c4d52c854bf03ed66218038 examples/classes/Service/mail/list.yml
+SHA1 355f7d5e1f390d74100934ebd99088de4acaf30e examples/classes/Service/mail/mda.yml
+SHA1 6d94be7f31e7a09a761c9b6d88456bcafa2278c0 examples/classes/Service/mail/mta.yml
+SHA1 3cbb35371a5e763de9ce8e0e34f8cdbf79732aeb examples/classes/Service/mail/sasl.yml
+SHA1 d70d1310ccbb5b96aff3625a5346e286afac5b3b examples/classes/Service/mail/sieve.yml
+SHA1 86f1b85a6d65754bb28c9bab7d3f36f4480ba90c examples/classes/Service/ssh.yml
+SHA1 53a27974a55da67ebf52d9df54a9e9628f852aec examples/classes/Service/web/apache/gnutls.yml
+SHA1 5211464ad7dec14a10b42d082b1b938bb0f823d2 examples/classes/Service/web/apache/index.yml
+SHA1 e770198bbb5d6a57286e92f1df4e3ca4623d555b examples/classes/Service/web/apache/uwsgi.yml
+SHA1 75c7e8c9457cb91bc85e0b05c6bc5576639aa95d examples/classes/Service/web/index.yml
+SHA1 e04efb0f648cea2c0cf27bd671cf4043b4d6b658 examples/classes/Service/web/mail/cider.yml
+SHA1 ed6c8dd2272d93c43a9dfcd3b29533e74eec934f examples/classes/Service/web/uwsgi/index.yml
+SHA1 2cb2592cfbf1839fe641a050ec3d0a835f17f5a5 examples/classes/Service/web/uwsgi/psgi.yml
+SHA1 43ac614d25c02b0183169bb734221f054d650860 examples/classes/Service/web/uwsgi/python.yml
+SHA1 97ac55c0d7f20c9fab0265057245b514cf988476 examples/classes/Service/web/wiki/moinmoin.yml
+SHA1 67e18a3c0a512c2be2dee9bf268882cd9df5b7c4 examples/classes/cli/compression/index.yml
+SHA1 bf7e82a960a7809cd16b055654d78e4a21e11b27 examples/classes/cli/compression/uncommon.yml
+SHA1 e3477a368e31fc1de65b385ea920f470a67e60da examples/classes/cli/gpm.yml
+SHA1 2e4fa0895ce96b72bd843f510450213cb1d76e79 examples/classes/cli/less.yml
+SHA1 c9cc5d600b0625140a76969d84c87f7765d7641e examples/classes/cli/mc.yml
+SHA1 b83679a8be81017f08bc83c69649aaa7d34ba588 examples/classes/cli/ssh-server.yml
+SHA1 d80c3b0656d69f04568f024da7a792fcfd82c85e examples/classes/cli/web.yml
+SHA1 e8ce76a263c9a931fb1e5d367ae43f67e8cfaaf7 examples/classes/hw/acpi/full.yml
+SHA1 2a40ba3ecccf8a4783ad4cd9a3abf9572db68c72 examples/classes/hw/acpi/index.yml
+SHA1 ceb9830033f920b9e031365514317336038e501e examples/classes/hw/bluetooth.yml
+SHA1 7963027eeb4d18fd957070cb63becfe92a1242ce examples/classes/hw/crypto.yml
+SHA1 f7213faa455db186129fd85f2c7c20419ce01aa7 examples/classes/hw/mac/index.yml
+SHA1 76626e08c190cdf13464e39e4981b990e27f9bb4 examples/classes/hw/mac/laptop.yml
+SHA1 57d01769d1997ad984fd8995e1f2abf1227509a0 examples/classes/hw/power.yml
+SHA1 2c45598a4faab216fe0232bd8bebbd9ec6c0db4b examples/classes/hw/x86/amd64.yml
+SHA1 c96cc7615ba8ab7968aaf79b99679ca9453757ca examples/classes/hw/x86/i486.yml
+SHA1 6b6e97587329fd54e9d8ef221cdfe7ee95c496c3 examples/classes/hw/x86/i686.yml
+SHA1 87080d71f9a12a1db73c958adc3f26abf34e5a8d examples/classes/x11/index.yml
+SHA1 20c2af37df6d3a9ec0c44362949d1228f8d039f7 examples/classes/x11/lightdm/gtk.yml
+SHA1 36575b4e55acc82830eaa1f53ef74130629b184f examples/classes/x11/lightdm/index.yml
+SHA1 caed6f4ab9eff34e60c2830cab1754ac862e7081 examples/classes/x11/xdg/icons.yml
+SHA1 fab399b14820e43bd722b4c06f25f84dff95c3c1 examples/nodes/lxp5.yml
+SHA1 02bb7c6a802284bfed6d50efcc4fcd8bab46c584 examples/nodes/parl-greens.yml
+SHA1 d71fcbba6b2ab9802d9667cce0ed6c419ce345ee lib/Boxer.pm
+SHA1 ff45d100b6b176b1d1b468a71abfbbfd9b4d2dcf lib/Boxer/CLI.pm
+SHA1 5c3c1436a09156b3b5e31b44ae76cf621474820f lib/Boxer/CLI/Command.pm
+SHA1 9b048443ba7d441692dcbf8dc5c0c5518cd96ae6 lib/Boxer/CLI/Command/About.pm
+SHA1 837759d1c8e8f7bef545186f256cd5a77d0ed44c lib/Boxer/CLI/Command/Aliases.pm
+SHA1 146c86505c9b890e1bd05e4ba6aeda1260b60e9b lib/Boxer/CLI/Command/Commands.pm
+SHA1 6798a80630c172732c2aeeed77396a444e54e957 lib/Boxer/CLI/Command/Compose.pm
+SHA1 30375466e8520cf0cb16cf40a89fc4d2a02d42e5 lib/Boxer/Role/Interact.pm
+SHA1 f4dec0663ab2a32aa3d57f60efaeb47730d7ead8 lib/Boxer/Task.pm
+SHA1 4ca8d005cdc2caa46c6916698646caacce7a81ad lib/Boxer/Task/Classify.pm
+SHA1 6ceabe2086b56003e05dbabd6b5e1f1fd10540da lib/Boxer/Task/Serialize.pm
+SHA1 6b9b815610eba0723ca62e008ae6e656e3d59e7a share/skel/preseed.cfg.in
+SHA1 4f634f08ec734a371d131dbfa75bb299815c3af8 share/skel/script.sh.in
 SHA1 79da2f8bb25fbfeaf402dca5baa579b66f0b6935 t/00_compile.t
 SHA1 3a08af6e6ef91d9f5fa3762310606c4432531a2e t/00_compile_scripts.t
 SHA1 e3d65ec269d39cafd7ce87ad24050a7110b93fc1 t/01_app_help.t
@@ -49,19 +234,19 @@ SHA1 d8fc6b2045604f2a6d04f551431fd1bb68050e77 t/pod.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQJ8BAEBCgBmBQJUQumkXxSAAAAAAC4AKGlzc3Vlci1mcHJAbm90YXRpb25zLm9w
+iQJ8BAEBCgBmBQJURbPuXxSAAAAAAC4AKGlzc3Vlci1mcHJAbm90YXRpb25zLm9w
 ZW5wZ3AuZmlmdGhob3JzZW1hbi5uZXQ5RkUzRTlDMzY2OTFBNjlGRjUzQ0M2ODQy
-QzdDMzE0NkMxQTAwMTIxAAoJECx8MUbBoAEheEUQAJ5P2s6i1E4uJi660o8ZrKbr
-QnWsTOMRymJw0cgG1Lbog92hQbJYP/9CpdNfHvPRmbTyyJYpPzO7o2aU7CSe0ngh
-7moADbPNvDuVXB1emHKNs6Ee7veJmTM+YxLgLLttZjYVty/ahDCPQ2xG7u/0O5qy
-Fuj9aAAHEocC9eL3pkD/+1l4Go3wZ9MpfllOwryHwaDWQ/i5vA/u00AIG7VtjxY3
-3M5dCS0NhEFwX9uGycFH3Q1IFhdc9CUiqSW++OdhcOPv2NqzteNwgFSbItztKqoI
-J6rMR0tkfSzBk7oWJoPzULE9DkwD1k19LpgIzj7sV4BjnHI7xPBJebE0sEx2R63q
-eQMfILQ0e6C220DNekaWDMPC1jJcTFR+Q1Ybn/SetkLKfG/VVdmNMNzibBgcqAsO
-mwvS+subeVAYO9cBrrurhFn6HMHt0dKs7he8ehuqQdsa27/7o6dx+ZSnciH1xGvJ
-RBwSajLmCk0O+q6LHySIUmCkqVrQmcm+zdu7LCBA1ZmHcGDqjXuglppjGJoTtirr
-H4DdrAVmPIIdXDubD7PEFJjf2IPehMi1jzR1JY/91lpdMIuWuSpg8gYXZIQ9VBOr
-BHE9qnGyM03d3CheWSry39qvhW1mLXwjhs7DHyjxqvJrnFy30JaZb5s1hTAHDPec
-xtGE87u1KiZIEyRfjX6I
-=4ggz
+QzdDMzE0NkMxQTAwMTIxAAoJECx8MUbBoAEhpAQQAIEELCwN/CReJ7emezXJYSc0
+ZZiXOubYvy5r/2fG47NyG/IEYR6Bmjte9b4xiI0mYfhWFbcCjOf9mlaGThR/C2yK
+snLgVJDVS0y4tkbJsgfldu3MmhB90d0+iuw28Vutv3XoXZbZrK/XVGzhiw0v4LJy
+PW8l/e0Q69LNA2EaySeuc2GoZpd7Xe4o/hD4Hxj2LMxwh7Al53G0AHiUVnwfiU/m
+geWajtXce6LTv5O4dafx22cunbHLOfGHLKjdKesVPQa7SALDLxDIM8vaDIibCb8D
+kl9JyboFUh97xK+QcPS8YqLJwGLvXZyvx6JtTZliaJUaa7i51tkZW4SDyRlMlF8v
+fy4wv7ng4l0L2O4WZyFGY4vc/68FAUjwjvtufP/h6/7K1eIJ4bU7eQyHRvfesdiN
+DEOTo9r7Oj1ZlbseBQV6oK0kVzOlbwzr/NWLpdFbvYFAdef3tyXqzqIqSP3Wq3ap
+XzyJm8H61OZdybdWbLw6uBF60xm2Yfqwq3dTN7IRRo8juSBr6gx+ZvRgi4qhJUbr
+SvKG7GKxsBLf52lfmR25zN/DVMJPgcZOhJ3ky2rF4aOlU0YNhljBMv059dLA6Piz
+vfsF3w/cuAWMJCqnlx5Lgi4597B22NzhtJgS45L1koSfPkBaJd3eFvH5psDkjyBF
+4PWmBnbxZaY+bLBs6LyU
+=0gS4
 -----END PGP SIGNATURE-----

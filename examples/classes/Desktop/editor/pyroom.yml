@@ -1,0 +1,9 @@
+classes:
+  - Desktop
+parameters:
+  doc:
+    desktop:
+      pkg:
+        - include desktop editor PyRoom
+  pkg:
+    - pyroom

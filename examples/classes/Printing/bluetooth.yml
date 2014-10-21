@@ -1,0 +1,12 @@
+classes:
+  - hw.bluetooth
+  - Printing
+parameters:
+  doc:
+    printing:
+      pkg:
+        - include support for printing via Bluetooth
+  pkg-auto:
+    - bluez-cups
+  pkg-avoid:
+    - ~bluez-cups

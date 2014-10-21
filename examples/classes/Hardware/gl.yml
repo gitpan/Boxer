@@ -1,0 +1,11 @@
+classes:
+  - Hardware
+parameters:
+  doc:
+    hardware:
+      pkg:
+        - include OpenGL hardware rasterizers (excluding software rasterizer)
+  pkg:
+    - libgl1-mesa-dri
+  pkg-avoid:
+    - libgl1-mesa-swx11

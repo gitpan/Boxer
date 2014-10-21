@@ -1,0 +1,14 @@
+classes:
+  - Desktop.web
+parameters:
+  doc:
+    desktop-web:
+      pkg:
+        - include Iceweasel security plugins
+  pkg:
+    - xul-ext-certificatepatrol
+    - xul-ext-cookie-monster
+    - xul-ext-flashblock
+    - xul-ext-noscript
+    - xul-ext-refcontrol
+    - xul-ext-requestpolicy

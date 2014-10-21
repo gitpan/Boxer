@@ -1,0 +1,8 @@
+classes:
+  - hw.crypto
+  - Hardware
+parameters:
+  doc:
+    hardware:
+      pkg:
+        - include low-level crypto tools

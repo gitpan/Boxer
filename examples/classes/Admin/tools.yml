@@ -1,0 +1,15 @@
+classes:
+  - Console.tools
+  - Console.editor
+  - Admin
+parameters:
+  doc:
+    admin:
+      pkg:
+        - include admin helper tools
+  pkg:
+    - atop
+    - bind9-host
+    - htop
+    - lshw
+    - lsof
