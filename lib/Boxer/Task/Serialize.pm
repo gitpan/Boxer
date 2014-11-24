@@ -12,12 +12,13 @@ use Types::Standard qw( HashRef Str Undef );
 use Types::Path::Tiny qw( Dir File Path );
 use Path::Tiny;
 use Try::Tiny;
+use Template::Tiny;
 use File::ShareDir::ProjectDistDir;
 
 use Role::Commons -all;
 
 our $AUTHORITY = 'cpan:JONASS';
-our $VERSION   = '0.003';
+our $VERSION   = '0.004';
 
 # permit callers to sloppily pass undefined hash values
 sub BUILDARGS
@@ -87,6 +88,19 @@ has node => (
 	required => 1,
 );
 
+my $pos           = 1;
+my @section_order = qw(
+	Administration
+	Service
+	Console
+	Desktop
+	Language
+	Framework
+	Task
+	Hardware
+);
+my %section_order = map { $_ => $pos++ } @section_order;
+
 sub run
 {
 	my $self = shift;
@@ -98,8 +112,12 @@ sub run
 
 	my %desc;
 
-#TODO: sort by explicit list
-	foreach my $key ( sort keys %{ $params{doc} } ) {
+	my @section_keys = sort {
+		( $section_order{$a} // 1000 ) <=> ( $section_order{$b} // 1000 )
+			|| $a cmp $b
+	} keys %{ $params{doc} };
+
+	foreach my $key (@section_keys) {
 		my $headline = $params{doc}{$key}{headline}[0] || $key;
 		if ( $params{pkg} and $params{doc}{$key}{pkg} ) {
 			push @{ $desc{pkg} }, "# $headline";
@@ -124,35 +142,48 @@ sub run
 		: '';
 	my @pkg = try { @{ $params{pkg} } } catch { die "No packages resolved" };
 	my @pkgauto = try { @{ $params{'pkg-auto'} } }
-	catch { die "No package auto-markings resolved" };
+	catch { warn "No package auto-markings resolved" };
 	my @pkgavoid = try { @{ $params{'pkg-avoid'} } }
-	catch { die "No package avoidance resolved" };
+	catch { warn "No package avoidance resolved" };
 	my @tweak
-		= try { @{ $params{tweak} } } catch { die "No tweaks resolved" };
+		= try { @{ $params{tweak} } } catch { warn "No tweaks resolved" };
 	my $pkglist = join( ' ', sort @pkg );
 	$pkglist .= " \\\n ";
 	$pkglist .= join( ' ', sort map { $_ . '-' } @pkgavoid );
 	my $pkgautolist = join( ' ', sort @pkgauto );
 	grep {chomp} @tweak;
-	my $tweaklist = join( ";\\\n ", 'set -e', @tweak );
+	my $tweaklist = join( ";\\\n ", @tweak );
 
 	$self->outdir->mkpath;
-	$_ = $self->altinfile->slurp;
-	s,__PKGDESC__,$pkgdesc,;
-	s,__PKGLIST__,$pkglist,;
-	s,__TWEAKDESC__,$tweakdesc,;
-	s,__TWEAKLIST__,$tweaklist,;
-	s,__PKGAUTOLIST__,$pkgautolist,;
-	s,chroot\s+/target\s+,,g;
-	s,/target/,/,g;
-	$self->altoutfile->spew($_);
-	$_ = $self->infile->slurp;
-	s,__PKGDESC__,$pkgdesc,;
-	s,__PKGLIST__,$pkglist,;
-	s,__TWEAKDESC__,$tweakdesc,;
-	s,__TWEAKLIST__,$tweaklist,;
-	s,__PKGAUTOLIST__,$pkgautolist,;
-	$self->outfile->spew($_);
+
+	my $template = Template::Tiny->new(
+		TRIM => 1,
+	);
+
+	my %vars = (
+		pkgdesc     => $pkgdesc,
+		pkglist     => $pkglist,
+		tweakdesc   => $tweakdesc,
+		tweaklist   => $tweaklist,
+		pkgautolist => $pkgautolist,
+	);
+	# TODO: drop this when fixed boxer-data is in common use
+	if ( $vars{tweaklist} =~ s,__PKGAUTOLIST__,$pkgautolist, ) {
+		warn "Embedding __PKGAUTOLIST__ in tweaks is deprecated";
+		$vars{pkgautolist} = undef;
+	}
+
+	my %altvars = %vars;
+	$altvars{tweaklist} =~ s,chroot\s+/target\s+,,g;
+	$altvars{tweaklist} =~ s,/target/,/,g;
+
+	my $altcontent = '';
+	$template->process( \$self->altinfile->slurp, \%altvars, \$altcontent );
+	$self->altoutfile->spew( $altcontent . "\n" );
+
+	my $content = '';
+	$template->process( \$self->infile->slurp, \%vars, \$content );
+	$self->outfile->spew( $content . "\n" );
 }
 
 1;

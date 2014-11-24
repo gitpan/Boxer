@@ -11,7 +11,7 @@ use Module::Runtime qw/use_module/;
 use Role::Commons -all;
 
 our $AUTHORITY = 'cpan:JONASS';
-our $VERSION   = '0.003';
+our $VERSION   = '0.004';
 
 use constant {
 	abstract   => q[compose system recipe from reclass node],
@@ -41,9 +41,9 @@ sub opt_spec
 {
 	return (
 		[ "suite=s",    "suite of classes to use (wheezy)" ],
-		[ "nodedir=s",  "location of nodes (current dir)" ],
-		[ "classdir=s", "location of classes (XDG_DATA_DIRS/suite)" ],
-		[ "datadir=s",  "location with nodes and classes/suite below" ],
+		[ "nodedir=s",  "location of nodes (XDG datadir + suite/nodes)" ],
+		[ "classdir=s", "location of classes (XDG datadir + suite/classes)" ],
+		[ "datadir=s",  "location containing nodes and classes" ],
 		[ "skeldir=s",  "location of skeleton files (use builtin)" ],
 		[ "format=s", "serialize recipe(s) in this format (preseed script)" ],
 		[ "verbose|v", "verbose output" ],

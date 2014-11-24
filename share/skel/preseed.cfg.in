@@ -2,10 +2,10 @@
 # DebianParl Homepage: https://wiki.debian.org/DebianParl
 # Source of this code: git://git.debian.org/parl/blends
 
-__PKGDESC__
+[% pkgdesc %]
 tasksel tasksel/desktop multiselect xfce
 tasksel tasksel/first multiselect laptop
-d-i pkgsel/include string __PKGLIST__
+d-i pkgsel/include string [% pkglist %]
 # apply security updates immediately after install
 d-i pkgsel/upgrade select safe-upgrade
 
@@ -49,5 +49,8 @@ libc6 libraries/restart-without-asking boolean true
 # enable unattended-upgrades
 unattended-upgrades unattended-upgrades/enable_auto_updates boolean true
 
-__TWEAKDESC__
-d-i preseed/late_command string __TWEAKLIST__
+[% tweakdesc %]
+d-i preseed/late_command string set -e[% IF pkgautolist %];\
+ chroot /target apt-mark auto \
+  [% pkgautolist %][% END %];\
+ [% tweaklist %]

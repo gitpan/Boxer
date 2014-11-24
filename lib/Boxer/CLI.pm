@@ -9,7 +9,7 @@ use App::Cmd::Setup -app;
 use Role::Commons -all;
 
 our $AUTHORITY = 'cpan:JONASS';
-our $VERSION   = '0.003';
+our $VERSION   = '0.004';
 
 1;
 

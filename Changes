@@ -7,6 +7,26 @@ Home page:    <https://wiki.debian.org/Boxer>
 Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=Boxer>
 Maintainer:   Jonas Smedegaard (JONASS) <jonass@cpan.org>
 
+0.004	2014-11-24
+
+ [ Bug Fixes ]
+ - Fix only warn (not die) on unresolved auto-markings, avoidance or
+   tweaks.
+
+ [ Documentation ]
+ - Add some TODOs.
+
+ [ Other ]
+ - Adjust example class set: Use reclass 1.4 ABI, and drop broken Printing
+   class.
+ - Adjust help output of Compose command to describe correct default
+   locations.
+ - Deprecate expansion of __PKGAUTOLIST__ in tweaklist.
+ - Move initial shell code for tweaklist out to skeleton file.
+ - Sort doc sections by explicit list (and alphabetically only as
+   fallback).
+ - Use Template::Tiny.
+
 0.003	2014-10-19
 
  [ Documentation ]

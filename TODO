@@ -1,3 +1,10 @@
+  * Optionally include non-free packages.
+  * Only optionally (not by default) include tweaks.
+  * Include README on whether it is a Debian Blend or Debian Pure Blend.
+  * Isolate package auto-install flagging only relevant for upgrades.
+  * Fail (or optionally warn) if both installing and avoiding a package.
+  * Handle bugs as parameters, and extend data documentation.
+
 Initial release:
 
   * Reimplement commands and classes from current make-based boxer:
@@ -31,3 +38,5 @@ Later releases...
     to bring boxer flexibility to existing unmodified scripts.
   * Implement web export and/or service usable with debian-installer for
     static/live boxer-driven "Hands-off" <http://www.hands.com/d-i/>.
+  * Implement commands and classes to interact with bug trackers:
+    + triage

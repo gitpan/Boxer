@@ -9,8 +9,12 @@ set -e
 # Workaround for dictionaries-common install failure (bug#751367)
 aptitude install apt-utils
 
-__PKGDESC__
-aptitude install task-laptop __PKGLIST__
+[% pkgdesc %]
+aptitude install task-laptop [% pkglist %]
 
-__TWEAKDESC__
-__TWEAKLIST__
+[% tweakdesc %]
+[% IF pkgautolist %]
+ apt-mark auto \
+  [% pkgautolist %]
+[% END %]
+ [% tweaklist %]

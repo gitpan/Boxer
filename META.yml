@@ -35,37 +35,37 @@ optional_features: {}
 provides:
   Boxer:
     file: lib/Boxer.pm
-    version: '0.003'
+    version: '0.004'
   Boxer::CLI:
     file: lib/Boxer/CLI.pm
-    version: '0.003'
+    version: '0.004'
   Boxer::CLI::Command:
     file: lib/Boxer/CLI/Command.pm
-    version: '0.003'
+    version: '0.004'
   Boxer::CLI::Command::About:
     file: lib/Boxer/CLI/Command/About.pm
-    version: '0.003'
+    version: '0.004'
   Boxer::CLI::Command::Aliases:
     file: lib/Boxer/CLI/Command/Aliases.pm
-    version: '0.003'
+    version: '0.004'
   Boxer::CLI::Command::Commands:
     file: lib/Boxer/CLI/Command/Commands.pm
-    version: '0.003'
+    version: '0.004'
   Boxer::CLI::Command::Compose:
     file: lib/Boxer/CLI/Command/Compose.pm
-    version: '0.003'
+    version: '0.004'
   Boxer::Role::Interact:
     file: lib/Boxer/Role/Interact.pm
-    version: '0.003'
+    version: '0.004'
   Boxer::Task:
     file: lib/Boxer/Task.pm
-    version: '0.003'
+    version: '0.004'
   Boxer::Task::Classify:
     file: lib/Boxer/Task/Classify.pm
-    version: '0.003'
+    version: '0.004'
   Boxer::Task::Serialize:
     file: lib/Boxer/Task/Serialize.pm
-    version: '0.003'
+    version: '0.004'
 requires:
   App::Cmd: '0'
   Capture::Tiny: '0'
@@ -81,6 +81,7 @@ requires:
   Path::Class: '0'
   Path::Tiny: '0'
   Role::Commons: '0'
+  Template::Tiny: '0.11'
   Try::Tiny: '0'
   Types::Path::Tiny: '0'
   Types::Standard: '0'
@@ -96,7 +97,7 @@ resources:
   homepage: https://metacpan.org/release/Boxer
   license: http://dev.perl.org/licenses/
   repository: https://anonscm.debian.org/cgit/boxer/Boxer.git
-version: '0.003'
+version: '0.004'
 x_help_wanted:
   - tester
   - documenter

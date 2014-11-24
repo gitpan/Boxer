@@ -10,7 +10,7 @@ use namespace::clean;
 use Role::Commons -all;
 
 our $AUTHORITY = 'cpan:JONASS';
-our $VERSION   = '0.003';
+our $VERSION   = '0.004';
 
 use constant {
 	abstract   => q[list which boxer plugins are installed],
